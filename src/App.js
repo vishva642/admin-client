@@ -8,6 +8,8 @@ import './scss/style.scss'
 
 // We use those styles to show code examples, you should remove them in your application.
 import './scss/examples.scss'
+import DefaultLayout from './layout/DefaultLayout'
+
 const App = () => {
   const { isColorModeSet, setColorMode } = useColorModes('coreui-free-react-admin-template-theme')
   const storedTheme = useSelector((state) => state.theme)
@@ -35,6 +37,7 @@ const App = () => {
           </div>
         }
       >
+        <DefaultLayout />
       </Suspense>
     </HashRouter>
   )
